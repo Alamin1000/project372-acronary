@@ -19,6 +19,9 @@
     .header-in {
         padding: 17px 0;
     }
+    .main-menu > ul > li > a::after {
+        height: 2px;
+    }
 
 
     .hero-content .h1 {
