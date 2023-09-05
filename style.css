@@ -11,6 +11,12 @@
 }
 *,::before,::after {
   box-sizing: border-box;
+
+}
+section {
+  scroll-behavior: smooth !important;
+  -webkit-scroll-margin-top: 100px !important;
+  scroll-margin-top: 100px !important;
 }
 body {
   font-size: 16px;
@@ -83,7 +89,7 @@ p:last-child{
 }
 .main-wrap {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 @media (max-width: 1399px) and (min-width: 1200px) {
   .container {
@@ -149,6 +155,9 @@ p:last-child{
 .main-menu > ul > li > a:hover {
   color: var(--theme__color1);
 }
+.main-menu > ul > li.active a {
+  color: var(--theme__color1);
+}
 
 .header-right {
 
@@ -212,12 +221,8 @@ p:last-child{
   color: #fff;
   padding: 10px;
 }
-.dropdown-menu-custom ul {
-  background: #fff;
-  padding: 20px 0;
-}
-.dropdown-menu-custom ul li a {
-  color: #97A3AE;
+.mobile-menu li.active a {
+  color: var(--theme__color1);
 }
 .offcanvas-overlay {
   position: fixed;
@@ -642,7 +647,7 @@ p:last-child{
 .pricing-plans-row {
   --bs-gutter-x: 20px;
   --bs-gutter-y: var(--bs-gutter-x);
-  align-items: center;
+  align-items: flex-end;
 }
 .pricing-card {
   padding: 26px 30px 24px;

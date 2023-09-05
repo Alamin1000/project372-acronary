@@ -2,27 +2,34 @@
   "use strict";
 
   // offcanvas-js
-  $(".offcanvas-open").click(function () {
-    $(".offcanvas-menu").addClass("active");
-    $(".offcanvas-overlay").addClass("active");
+  $(".offcanvas-open").click(function (e) {
+    e.preventDefault();
+    offcanvasOpen();
   });
-  $(".offcanvas-menu a").click(function () {
-    $(".offcanvas-menu").removeClass("active");
-    $(".offcanvas-overlay").removeClass("active");
+  $(".offcanvas-menu a:not(.anchor)").click(function (e) {
+    e.preventDefault();
+    offcanvasClose();
   });
   $(".close-offcanvas").click(function () {
-    $(".offcanvas-menu").removeClass("active");
-    $(".offcanvas-overlay").removeClass("active");
+    e.preventDefault();
+    offcanvasClose();
   });
   $(document).mouseup(function (e) {
     var container = $(".offmenu");
 
     // If the target of the click isn't the container
     if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $(".offcanvas-menu").removeClass("active");
-      $(".offcanvas-overlay").removeClass("active");
+      offcanvasClose();
     }
   });
+  function offcanvasOpen() {
+    $(".offcanvas-menu").addClass("active");
+    $(".offcanvas-overlay").addClass("active");
+  }
+  function offcanvasClose() {
+    $(".offcanvas-menu").removeClass("active");
+    $(".offcanvas-overlay").removeClass("active");
+  }
 
   // sticky-menu
   var wind = $(window);
@@ -54,6 +61,7 @@
     scrollThreshold: 0.5,
     filter: "",
     easing: "swing",
+    scrollChange: false,
   });
 })(jQuery);
 
