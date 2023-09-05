@@ -12,10 +12,16 @@
     background: var(--theme__color2);
     color: white;
     transition: .3s;
+    border: 1px solid transparent;
 }
 .default-button:hover {
     background: var(--theme__color1);
     color: white;
+}
+
+.default-button--white {
+    background: #fff;
+    color: var(--theme__color2);
 }
 
 .default-button--sm {

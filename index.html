@@ -27,35 +27,21 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <ul class="mobile-menu page-menu">
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#features-section">Features</a></li>
+            <li><a href="#benefits-section">Benefits</a></li>
+            <li><a href="#pricing-section">Pricing</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
 
       <!-- header-section -->
-      <header class="header-section">
+      <header class="header-section" id="sticky-header">
         <div class="header-in">
           <div class="container">
             <div class="header-section__inner">
@@ -63,18 +49,22 @@
                 <img src="images/logo.svg" alt="" />
               </a>
 
-              <div class="main-menu">
+              <div class="main-menu d-lg-block d-none page-menu">
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Benefits</a></li>
-                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#hero-section">Home</a></li>
+                  <li><a href="#features-section">Features</a></li>
+                  <li><a href="#benefits-section">Benefits</a></li>
+                  <li><a href="#pricing-section">Pricing</a></li>
                 </ul>
               </div>
 
-              <div class="header-right">
+              <div class="header-right d-lg-block d-none">
                 <a href="#" class="default-button">Contact us</a>
               </div>
+
+              <a href="#" class="d-lg-none offcanvas-open">
+                <i class="far fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -84,7 +74,7 @@
       <!-- main -->
       <main>
         <!-- hero-section -->
-        <section class="hero-section">
+        <section class="hero-section" id="hero-section">
           <div class="container">
             <div class="hero-section__inner">
               <div class="hero__row row">
@@ -139,7 +129,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 order-lg-0 order-first">
                   <div class="hero__image">
                     <div class="hero__image__inner">
                       <img src="images/hero-image.png" alt="" class="img" />
@@ -164,42 +154,42 @@
                 <div class="trusted-companies_wrap">
                   <div class="trusted-company-single">
                     <img
-                      src="images/trusted-company-1.png"
+                      src="images/trusted-company-1.svg"
                       alt=""
                       class="img"
                     />
                   </div>
                   <div class="trusted-company-single">
                     <img
-                      src="images/trusted-company-2.png"
+                      src="images/trusted-company-2.svg"
                       alt=""
                       class="img"
                     />
                   </div>
                   <div class="trusted-company-single">
                     <img
-                      src="images/trusted-company-3.png"
+                      src="images/trusted-company-3.svg"
                       alt=""
                       class="img"
                     />
                   </div>
                   <div class="trusted-company-single">
                     <img
-                      src="images/trusted-company-4.png"
+                      src="images/trusted-company-4.svg"
                       alt=""
                       class="img"
                     />
                   </div>
                   <div class="trusted-company-single">
                     <img
-                      src="images/trusted-company-5.png"
+                      src="images/trusted-company-5.svg"
                       alt=""
                       class="img"
                     />
                   </div>
                   <div class="trusted-company-single">
                     <img
-                      src="images/trusted-company-6.png"
+                      src="images/trusted-company-6.svg"
                       alt=""
                       class="img"
                     />
@@ -212,7 +202,7 @@
         <!-- companies-section-end -->
 
         <!-- features-section -->
-        <section class="features-section">
+        <section class="features-section" id="features-section">
           <div class="container">
             <div class="features-section__inner">
               <div
@@ -227,12 +217,12 @@
               </div>
 
               <!-- feature-row-1 -->
-              <div class="feature-row row feature-row__1">
+              <div class="feature-row row feature-row__1 gy-5">
                 <div class="col-lg-7">
                   <div class="feature__image__1">
                     <div class="feature__image__1__inner">
                       <div class="img-main">
-                        <img src="images/features-1.png" alt="" class="img" />
+                        <img src="images/features-1.svg" alt="" class="img" />
                       </div>
                       <div class="sd">
                         <img
@@ -300,7 +290,7 @@
               <!-- feature-row-1-end -->
 
               <!-- feature-row-2 -->
-              <div class="feature-row row feature-row__2">
+              <div class="feature-row row feature-row__2 gy-5">
                 <div class="col-lg-5">
                   <div class="features__content">
                     <h2 class="h2">Intuitive Word Definitions</h2>
@@ -315,9 +305,9 @@
                         </div>
                         <div class="txt">
                           <p class="mb-0">
-                            Our app provides organizations with a centralized
-                            and customizable repository of corporate acronyms,
-                            words, and phrases.
+                            With a simple right-click, users can access instant
+                            definitions for any unfamiliar term within their
+                            corporate glossary.
                           </p>
                         </div>
                       </div>
@@ -330,8 +320,9 @@
                         </div>
                         <div class="txt">
                           <p class="mb-0">
-                            This glossary is tailored to each company's unique
-                            terminology and industry-specific jargon.
+                            This feature simplifies complex terms, benefiting
+                            new hires during onboarding and aiding seasoned
+                            employees seeking clarity.
                           </p>
                         </div>
                       </div>
@@ -344,16 +335,16 @@
                         </div>
                         <div class="txt">
                           <p class="mb-0">
-                            Users can easily access and search for definitions,
-                            clarifying any language-related challenges, and
-                            ensuring everyone is on the same page.
+                            This intuitive approach fosters better communication
+                            and reduces the learning curve for employees,
+                            regardless of their tech-savviness.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-0 order-first">
                   <div class="feature__image__2">
                     <div class="feature__image__2__inner">
                       <div class="img-main">
@@ -384,7 +375,7 @@
         <!-- features-section-end -->
 
         <!-- why-section -->
-        <section class="why-section">
+        <section class="why-section" id="benefits-section">
           <div class="container">
             <div class="why-section__inner">
               <div class="why-section__in-box">
@@ -399,7 +390,7 @@
                   </p>
                 </div>
 
-                <div class="why__row row">
+                <div class="why__row row gy-4 justify-content-center">
                   <div class="col-lg-4 col-md-6">
                     <div class="why-card">
                       <div class="icon">
@@ -451,11 +442,269 @@
           </div>
         </section>
         <!-- why-section-end -->
+
+        <!-- pricing-section -->
+        <section class="pricing-section" id="pricing-section">
+          <div class="container">
+            <div class="pricing-section__inner">
+              <div
+                class="pricing-section__title sec-title cont-blk cont-blk--center"
+              >
+                <h2 class="h2">Pricing Plans</h2>
+                <p class="p">
+                  Experience Seamless Corporate Communication and Onboarding
+                  with Our <br class="d-md-block d-none" />
+                  Comprehensive Glossary Solution
+                </p>
+              </div>
+
+              <div class="pricing-plans-row row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="pricing-card">
+                    <div class="pricing-card__head">
+                      <h3>Basic</h3>
+                      <h5>For single user</h5>
+                      <div class="price">
+                        <span class="big">$4.99</span>
+                        <span class="small">/per month</span>
+                      </div>
+                    </div>
+                    <div class="pricing-card__body">
+                      <ul class="pricing-ul">
+                        <li>Access to the corporate glossary</li>
+                        <li>Definitions for acronyms and jargon</li>
+                        <li>User-friendly interface</li>
+                        <li>Email support</li>
+                      </ul>
+                    </div>
+                    <div class="pricing-card-bottom">
+                      <a href="#" class="default-button">Select basic plan</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-12 order-lg-0 order-md-last order-0"
+                >
+                  <div class="pricing-card pricing-card--highlight">
+                    <div class="pricing-card__head">
+                      <h3>Professional</h3>
+                      <h5>For teams (up to 5 people)</h5>
+                      <div class="price">
+                        <span class="big">$5.99</span>
+                        <span class="small">/per user per month</span>
+                      </div>
+                    </div>
+                    <div class="pricing-card__body">
+                      <ul class="pricing-ul pricing-ul--white">
+                        <li>Access to the corporate glossary</li>
+                        <li>Definitions for acronyms and jargon</li>
+                        <li>Customizable glossary for your organization</li>
+                        <li>Analytics and usage reporting</li>
+                        <li>Integration with popular productivity tools</li>
+                        <li>Priority email and chat support</li>
+                      </ul>
+                    </div>
+                    <div class="pricing-card-bottom">
+                      <a href="#" class="default-button default-button--white"
+                        >Select professional plan</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="pricing-card">
+                    <div class="pricing-card__head">
+                      <h3>Enterprise</h3>
+                      <h5>For larger teams</h5>
+                      <div class="price">
+                        <span class="big">$12.99</span>
+                        <span class="small">/per user per month</span>
+                      </div>
+                    </div>
+                    <div class="pricing-card__body">
+                      <ul class="pricing-ul">
+                        <li>Access to the corporate glossary</li>
+                        <li>Definitions for acronyms and jargon</li>
+                        <li>Customizable glossary for your organization</li>
+                        <li>Analytics and usage reporting</li>
+                        <li>Integration with popular productivity tools</li>
+                        <li>Priority email and chat support</li>
+                      </ul>
+                    </div>
+                    <div class="pricing-card-bottom">
+                      <a href="#" class="default-button"
+                        >Select enterprise plan</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- pricing-section-end -->
+
+        <!-- contact-us-section -->
+        <section class="contact-section">
+          <div class="container">
+            <div class="contact-section__inner">
+              <div class="contact-section__row row gy-4">
+                <div class="col-lg-6">
+                  <div class="contact-content cont-blk">
+                    <h2 class="h2">Contact us</h2>
+                    <p class="p color-white">
+                      Experience Seamless Corporate Communication and Onboarding
+                      with Our Comprehensive Glossary Solution.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="contact-form">
+                    <div class="contact-form__main row">
+                      <div class="col-md-6">
+                        <div class="single-input-x">
+                          <label class="label-x">Name</label>
+                          <div class="input-x-outer">
+                            <input
+                              type="text"
+                              class="input-x"
+                              placeholder="Write your name"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="single-input-x">
+                          <label class="label-x">Email address</label>
+                          <div class="input-x-outer">
+                            <input
+                              type="text"
+                              class="input-x"
+                              placeholder="Write your email address"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="single-input-x">
+                          <label class="label-x">Message</label>
+                          <div class="input-x-outer">
+                            <textarea
+                              class="input-x input-x--big"
+                              placeholder="Write your message"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 ms-auto pt-2">
+                        <div class="single-input-x mb-0">
+                          <div class="input-x-outer">
+                            <button class="input-x input-x--submit">
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact-us-section-end -->
       </main>
       <!-- main end -->
 
       <!-- footer-section -->
-      <footer class="footer-section"></footer>
+      <footer class="footer-section">
+        <div class="container">
+          <div class="footer-section__inner">
+            <div class="footer-top">
+              <div class="footer-logo-column">
+                <a href="index.html" class="footer-logo">
+                  <img src="images/logo.svg" alt="" />
+                </a>
+
+                <ul class="footer-contact-menu">
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="txt">help@acronary.com</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                      </div>
+                      <div class="txt">+1 234 456 678 89</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-menu-column">
+                <div class="footer-menu">
+                  <h4>Company</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-menu-column">
+                <div class="footer-menu">
+                  <h4>Legal</h4>
+                  <ul>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-menu-column">
+                <div class="footer-menu">
+                  <h4>Product</h4>
+                  <ul>
+                    <li><a href="#">Take Tour</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Reviews</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-cta-column">
+                <h3>Newsletter</h3>
+                <div class="footer-cta">
+                  <h4>Stay Up To Date</h4>
+                  <div class="footer-cta-form">
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Your email "
+                    />
+                    <button
+                      class="submit-button default-button default-button--sm"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p class="copyright">
+                Copyright 2022 Acronary inc. all rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
       <!--End footer-section -->
     </div>
     <!-- main-wrap -->
@@ -463,6 +712,7 @@
     <!-- js -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/one-page-nav-min.js"></script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>
