@@ -267,6 +267,10 @@
 
 
 @media (max-width: 991px) {
+    .header-in {
+        border-bottom-color: #0000001c;
+    }
+
     .hero-section {
         padding: 45px 0 45px;
     }

@@ -10,8 +10,7 @@
     e.preventDefault();
     offcanvasClose();
   });
-  $(".close-offcanvas").click(function () {
-    e.preventDefault();
+  $(".close-offcanvas-any").click(function () {
     offcanvasClose();
   });
   $(document).mouseup(function (e) {
