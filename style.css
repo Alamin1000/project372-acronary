@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--urbanist);
 }
-a, a:active, a:focus, a:active, a:hover {
+a, a:hover {
   text-decoration:none !important;
   color: inherit;
 }
@@ -553,12 +553,16 @@ p:last-child{
   border-radius: inherit;
 }
 .feature__image__2 {
+	width: 100%;
+	margin-top: 0px;
+	position: relative;
+	margin-left: 23%;
+}
+.feature__image__2 .full-image {
   width: 100%;
-  margin-top: 20px;
-  position: relative;
 }
 .feature__image__2__inner {
-  padding-left: 20%;
+  padding-left: 0;
 }
 .feature__image__2 .img-main {
   border-radius: 17.317px;
@@ -852,6 +856,7 @@ p:last-child{
 }
 .input-x::placeholder {
   opacity: 0.2;
+  color: #fff;
 }
 .input-x:focus::placeholder {
   opacity: 0;
